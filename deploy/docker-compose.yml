@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  traefik:
+    image: traefik:v2.10
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.myresolver.acme.email=myemail@example.com"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /letsencrypt:/letsencrypt
+    networks:
+      - web
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ma_base_de_donnees
+      MYSQL_USER: delta
+      MYSQL_PASSWORD: delta
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    networks:
+      - internal  
+
+  backend:
+    image: myproject-backend:latest
+    deploy:
+      replicas: 1
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend.rule=Host(`backend.example.com`)"
+      - "traefik.http.routers.backend.entrypoints=websecure"
+      - "traefik.http.routers.backend.tls.certresolver=myresolver"
+    networks:
+      - web
+      - internal
+
+  frontend:
+    image: myproject-frontend:latest
+    deploy:
+      replicas: 1
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`frontend.example.com`)"
+      - "traefik.http.routers.frontend.entrypoints=websecure"
+      - "traefik.http.routers.frontend.tls.certresolver=myresolver"
+    networks:
+      - web
+
+
+
+networks:
+  web:
+    external: true
+  internal:
+    driver: overlay
+
+volumes:
+  mariadb-data:
