@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb:10.6
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ma_base_de_donnees
+      MYSQL_USER: delta
+      MYSQL_PASSWORD: delta
+    ports:
+      - "3307:3306"
+    networks:
+      - mynetwork
+      
+  backend:
+    image: my-spring-boot-app
+    container_name: backend
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3306/ma_base_de_donnees
+      SPRING_DATASOURCE_USERNAME: delta
+      SPRING_DATASOURCE_PASSWORD: delta
+    ports:
+      - "8080:8080"  
+    networks:
+      - mynetwork
+
+  frontend:
+    image: my-angular-app
+    container_name: frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - mynetwork
+
+ 
+
+networks:
+  mynetwork:
+    driver: bridge
