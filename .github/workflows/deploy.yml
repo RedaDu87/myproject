@@ -77,21 +77,29 @@ jobs:
         docker push ${{ secrets.DOCKER_USERNAME }}/myproject-frontend:latest
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+  runs-on: ubuntu-latest
+  needs: build
+  steps:
+  - name: Checkout code
+    uses: actions/checkout@v2
 
-    - name: Install SSH client
-      run: sudo apt-get install -y sshpass
+  - name: Install SSH client and sshpass
+    run: sudo apt-get install -y sshpass
 
-    - name: Deploy via SSH
-      env:
-        SSHPASS: ${{ secrets.SSH_PASS }}
-      run: |
-        sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
-        cd /home
-        docker-compose pull
-        docker stack deploy -c docker-compose.yml myproject-stack
-        EOF
+  - name: Deploy via SSH
+    env:
+      SSHPASS: ${{ secrets.SSH_PASS }}  # Utiliser le mot de passe depuis les secrets GitHub
+    run: |
+      sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
+      sudo apt-get update
+      sudo apt-get install -y docker-compose
+
+      # Ajoute l'utilisateur actuel au groupe docker pour éviter les problèmes de permission
+      sudo usermod -aG docker $USER
+
+      # Exécute les commandes Docker (après avoir installé docker-compose et ajouté les permissions)
+      cd /path/to/docker-compose
+      docker-compose pull
+      docker stack deploy -c docker-compose.yml myproject-stack
+      EOF
+
