@@ -34,7 +34,7 @@ services:
       - internal  
 
   backend:
-    image: myproject-backend:latest
+    image: anikondu87/myproject-backend:latest
     deploy:
       replicas: 1
     environment:
@@ -49,7 +49,7 @@ services:
       - internal
 
   frontend:
-    image: myproject-frontend:latest
+    image: anikondu87/myproject-frontend:latest
     deploy:
       replicas: 1
     labels:
