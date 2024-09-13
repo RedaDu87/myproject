@@ -95,6 +95,6 @@ jobs:
         sudo apt-get install -y docker-compose
         sudo usermod -aG docker $USER
         cd /home
-        docker-compose pull
-        docker stack deploy -c docker-compose.yml myproject-stack
+        sudo docker-compose pull
+        sudo docker stack deploy -c docker-compose.yml myproject-stack
         EOF
