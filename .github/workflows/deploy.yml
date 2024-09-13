@@ -88,7 +88,7 @@ jobs:
 
     - name: Deploy via SSH
       env:
-        SSH_PASS: ${{ secrets.SSH_PASS }}
+        SSHPASS: ${{ secrets.SSH_PASS }}
       run: |
         sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
         cd /path/to/docker-compose
