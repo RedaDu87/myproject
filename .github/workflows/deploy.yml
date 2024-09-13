@@ -9,6 +9,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      mariadb:
+        image: mariadb:10.5
+        env:
+          MYSQL_ROOT_PASSWORD: rootpassword  # Mot de passe pour l'utilisateur root
+          MYSQL_DATABASE: ma_base_de_donnees  # Nom de la base de données à créer
+          MYSQL_USER: delta                  # Utilisateur spécifique
+          MYSQL_PASSWORD: delta
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -25,12 +41,17 @@ jobs:
         node-version: '18'
 
     - name: Give execute permission to mvnw
-      working-directory: ./backend  # Se placer dans le répertoire 'backend'
-      run: chmod +x mvnw            # Donner les permissions d'exécution au script
+      working-directory: ./backend
+      run: chmod +x mvnw
 
     - name: Install backend dependencies
       working-directory: ./backend
       run: ./mvnw clean install
+
+      env:
+        SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/mydb
+        SPRING_DATASOURCE_USERNAME: root
+        SPRING_DATASOURCE_PASSWORD: rootpassword
 
     - name: Install frontend dependencies
       working-directory: ./frontend
