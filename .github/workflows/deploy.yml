@@ -24,6 +24,10 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Give execute permission to mvnw
+      working-directory: ./backend  # Se placer dans le répertoire 'backend'
+      run: chmod +x mvnw            # Donner les permissions d'exécution au script
+
     - name: Install backend dependencies
       working-directory: ./backend
       run: ./mvnw clean install
