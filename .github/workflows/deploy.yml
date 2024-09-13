@@ -86,6 +86,10 @@ jobs:
     - name: Install SSH client
       run: sudo apt-get install -y sshpass
 
+    - name: Login to Docker Hub
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+  
+
     - name: Deploy via SSH
       env:
         SSHPASS: ${{ secrets.SSH_PASS }}
@@ -93,6 +97,11 @@ jobs:
         sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
         sudo apt-get update
         sudo apt-get install -y docker-compose
+        
+        if [ "$(sudo docker info | grep 'Swarm' | awk '{print $2}')" = "inactive" ]; then
+        sudo docker swarm init
+        fi
+        
         sudo usermod -aG docker $USER
         cd /home
         sudo docker-compose pull
