@@ -91,7 +91,7 @@ jobs:
         SSHPASS: ${{ secrets.SSH_PASS }}
       run: |
         sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
-        cd /path/to/docker-compose
+        cd /home
         docker-compose pull
         docker stack deploy -c docker-compose.yml myproject-stack
         EOF
