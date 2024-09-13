@@ -49,9 +49,9 @@ jobs:
       run: ./mvnw clean install
 
       env:
-        SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/mydb
-        SPRING_DATASOURCE_USERNAME: root
-        SPRING_DATASOURCE_PASSWORD: rootpassword
+        SPRING_DATASOURCE_URL: jdbc:mariadb://localhost:3306/ma_base_de_donnees
+        SPRING_DATASOURCE_USERNAME: delta
+        SPRING_DATASOURCE_PASSWORD: delta
 
     - name: Install frontend dependencies
       working-directory: ./frontend
