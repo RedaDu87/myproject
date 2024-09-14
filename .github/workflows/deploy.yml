@@ -102,6 +102,12 @@ jobs:
         sudo docker swarm init
         fi
 
+
+        # Créer le réseau Docker s'il n'existe pas
+        if ! sudo docker network ls | grep -q 'web'; then
+          sudo docker network create --driver overlay web
+        fi
+
         sudo usermod -aG docker ${{ secrets.SSH_USER }}
         cd /home
         sudo docker-compose pull
