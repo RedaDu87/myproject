@@ -6,15 +6,15 @@ FRONTEND_IMAGE="my-angular-app"
 
 # Construire l'image Docker pour le backend
 echo "Construire l'image Docker pour le backend..."
-cd backend/crudback
+cd backend
 docker build -t $BACKEND_IMAGE .
-cd ../..
+cd ..
 
 # Construire l'image Docker pour le frontend
 echo "Construire l'image Docker pour le frontend..."
-cd frontend/crud-personnes
+cd frontend
 docker build -t $FRONTEND_IMAGE .
-cd ../..
+cd ..
 
 # Créer un fichier docker-compose.yml si non existant
 echo "Créer docker-compose.yml..."
