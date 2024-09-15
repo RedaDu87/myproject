@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Sourate } from '../model/sourate.modele';
 import { Aya } from '../model/aya.modele';
 import { AlquranService } from '../services/coran/alquran.service';
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class CoranComponent implements AfterViewInit{
 
 
-  @ViewChild('someTag') myDiv!: ElementRef;
+  @ViewChildren('ayaElement') ayaElements!: QueryList<ElementRef>;
 
   isArabChecked = true;
   isFrChecked = true;
@@ -32,6 +32,8 @@ export class CoranComponent implements AfterViewInit{
 
   myDropDown : string = "1";
   ayaSelect :string = "";
+  currentIndex = 0; // L'index du verset actuellement joué
+
   onChangeofOptions(newGov: any) {
     if (this.audioTable.length !=0) this.pauseaya();
     console.log("+++++++",this.myDropDown);
@@ -47,7 +49,7 @@ export class CoranComponent implements AfterViewInit{
 
 constructor( public alquranService : AlquranService,private router: Router){}
   ngAfterViewInit(): void {
-    console.log("nananananan",this.myDiv.nativeElement.innerHTML);
+    
     this.goToAnchor1();
   }
 
@@ -137,57 +139,57 @@ constructor( public alquranService : AlquranService,private router: Router){}
   audioTable : any[] = new Array();
 
 
-  currentIndex = 0;
 
-  playayaAr(){
-   if (this.audioTable.length !=0) this.pauseaya();
+
+  // Appeler cette méthode après chaque changement de verset
+  playayaAr() {
+    if (this.audioTable.length != 0) this.pauseaya();
     this.audioTable.forEach(i => i = null);
-    this.audioTable.length =0;
+    this.audioTable.length = 0;
     this.currentIndex = 0;
-    this.sourah.ayas.forEach((item)=>{
-        this.audioObj = new Audio();
-       this.audioObj.src = item.audioAr;
-   
-       this.audioTable.push(this.audioObj);
+
+    this.sourah.ayas.forEach((item, index) => {
+      this.audioObj = new Audio();
+      this.audioObj.src = item.audioAr;
+      this.audioTable.push(this.audioObj);
+      
+      // Quand l'audio se termine, jouer le suivant et scroller
+      this.audioTable[index].addEventListener('ended', () => {
+        if (index + 1 < this.audioTable.length) {
+          this.audioTable[index + 1].play();
+          this.currentIndex = index + 1;
+          this.scrollToAya(this.currentIndex);  // Scroll vers le prochain verset
+        }
+      });
     });
 
-    for (let i =0; i < this.audioTable.length;i++){
-      this.audioTable[i].addEventListener('ended', () => {
-        this.audioTable[i+1].play();
-        this.currentIndex++;
-            console.log(this.audioTable[i+1]);
-            this.goToAnchor1();
-          });
-          
-    }
     this.audioTable[0].play();
-    this.goToAnchor1();
- 
-}
+    this.scrollToAya(0);  // Scroll vers le premier verset
+  }
 
 playayaFr() {
-  if (this.audioTable.length !=0) this.pauseaya();
-    this.audioTable.forEach(i => i = null);
-    this.audioTable.length =0;
-    this.currentIndex = 0;
-    this.sourah.ayas.forEach((item)=>{
-        this.audioObj = new Audio();
-       this.audioObj.src = item.audioFr;
-   
-       this.audioTable.push(this.audioObj);
-    });
+  if (this.audioTable.length != 0) this.pauseaya();
+  this.audioTable.forEach(i => i = null);
+  this.audioTable.length = 0;
+  this.currentIndex = 0;
 
-    for (let i =0; i < this.audioTable.length;i++){
-      this.audioTable[i].addEventListener('ended', () => {
-        this.audioTable[i+1].play();
-        this.currentIndex++;
-            console.log(this.audioTable[i+1]);
-            this.goToAnchor1();
-          });
-          
-    }
-    this.audioTable[0].play();
-    this.goToAnchor1();
+  this.sourah.ayas.forEach((item, index) => {
+    this.audioObj = new Audio();
+    this.audioObj.src = item.audioFr;
+    this.audioTable.push(this.audioObj);
+    
+    // Quand l'audio se termine, jouer le suivant et scroller
+    this.audioTable[index].addEventListener('ended', () => {
+      if (index + 1 < this.audioTable.length) {
+        this.audioTable[index + 1].play();
+        this.currentIndex = index + 1;
+        this.scrollToAya(this.currentIndex);  // Scroll vers le prochain verset
+      }
+    });
+  });
+
+  this.audioTable[0].play();
+  this.scrollToAya(0);  // Scroll vers le premier verset
   }
 
 pauseaya(){
@@ -225,6 +227,14 @@ reprendreaya(){
 goToAnchor1() {
   this.router.navigate(['/coran'], { fragment: (this.currentIndex+1).toString() });
 }
+
+  // Méthode pour faire défiler vers le verset en cours
+  scrollToAya(index: number) {
+    const ayaElement = this.ayaElements.toArray()[index];
+    if (ayaElement) {
+      ayaElement.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
 
 
 
