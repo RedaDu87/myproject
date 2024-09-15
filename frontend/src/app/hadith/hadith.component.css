@@ -1,0 +1,118 @@
+
+/* h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+} */
+
+
+.aya {
+  /* border : 2px solid black; */
+  /* border-radius: 1cm; */
+  background-color: rgba(255, 255, 255, 0.8);
+  border:  double;
+  /* background-size: cover; */
+
+
+}
+
+.styque {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+}
+
+.styqueOpacity{
+  /* background-color: rgba(255, 255, 255, 0.8);
+  height: 17vh;  */
+}
+
+.blueH2{
+  color: blue !important;
+}
+
+.greenH2{
+  color: green !important;
+}
+
+@font-face {
+  font-family: 'Kitab';
+  src: url("//cdn.alquran.cloud/public/fonts/Kitab-Regular.ttf");
+}
+
+.font-kitab {
+  font-family: 'Kitab';
+  color: #666666;
+  line-height: 1.846;
+  font-size: 3vh;
+}
+
+@font-face {
+  font-family: 'Kitab Bold';
+  src: url("//cdn.alquran.cloud/public/fonts/Kitab-Bold.ttf");
+}
+
+.font-kitab-bold {
+  font-family: 'Kitab Bold';
+}
+
+audio {
+  width: 115px;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+  -webkit-justify-content: center;
+  height: 25px;
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline
+{
+  display: none !important;
+}
+
+/* Removes the time stamp */
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+.conteneurDeBase{
+  background-image: url("../../assets/images/Mosque-PPT-Backgrounds.jpg");
+  background-repeat:space;
+  background-attachment:fixed;
+  background-size:cover ;
+
+  min-height: 100vh;
+
+
+  /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)); */
+}
+
+
+
+
+
+.box {
+  width: fit-content;
+  height: auto;
+  border: 1px solid #999;
+  font-size: 3vh;
+  color: #1c87c9;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+}
+
+p {
+  font-size: 2vh;
+
+}
+
+
+

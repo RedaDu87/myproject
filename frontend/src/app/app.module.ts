@@ -1,24 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { PersonnesComponent } from './components/personnes/personnes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { CoranComponent } from './coran/coran.component';
+import { HadithComponent } from './hadith/hadith.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { CoursArabeComponent } from './cours-arabe/cours-arabe.component';
+import { NavComponent } from './nav/nav.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    PersonnesComponent
+    CoranComponent,
+    HadithComponent,
+    HomeComponent,
+    CoursArabeComponent,
+    NavComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

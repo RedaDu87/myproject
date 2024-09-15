@@ -1,0 +1,64 @@
+<div class="conteneurDeBase">
+  <div class="styque" style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap;  ">
+
+
+    <div  class="select">
+      <select class="box" [(ngModel)]="myDropDown" (ngModelChange)="onChangeofOptions($event)">
+        <option style="max-width: 100px" *ngFor="let cat of listeCategories" value="{{cat.id}}">{{cat.title}}</option>
+      </select>
+    </div>
+    </div>
+
+
+  <div style="margin-top: 3vh;">
+    <div class="aya" *ngFor="let had of listeHadiths; index as i" id="{{i+1}}" >
+      <div style="display: flex; justify-content:space-evenly; align-items: center; flex-wrap: wrap;">
+        <div>
+          <p>{{i+1}}/ {{listeHadiths.length}}</p>
+        </div>
+      </div>
+
+      <div style="display: flex;flex-direction: row; justify-content:center; align-items: center; flex-wrap: wrap;background-color: rgb(97, 217, 177,0.05);padding: 5px 20px;">
+
+          <h1 style="font-size: 1rem" class="font-kitab">{{had.title}}</h1>
+          <button style="margin: 5px" class="button-9" (click)="hadithExplaynation(+had.id);dialog.showModal()">Détail</button>
+
+          <dialog id="dialog" #dialog>
+            <div>
+              {{hadith.title}}
+              <hr>
+              {{hadith.hadeeth}}
+              <hr>
+              {{hadith.attribution}}
+              <hr>
+              {{hadith.grade}}
+              <hr>
+              {{hadith.explanation}}
+              <hr>
+              {{hadith.hadeeth_ar}}
+              <hr>
+              {{hadith.explanation_ar}}
+              <hr>
+              {{hadith.grade_ar}}
+            </div>
+            <div style="text-align: center">
+              <button  class="button-9" (click)="dialog.close()">OK</button>
+            </div>
+          </dialog>
+
+
+  </div>
+
+
+</div>
+
+
+
+  </div>
+
+
+  </div>
+
+
+
+

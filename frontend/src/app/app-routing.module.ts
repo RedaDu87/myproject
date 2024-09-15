@@ -1,17 +1,29 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { PersonnesComponent } from './components/personnes/personnes.component';
+import { CoranComponent } from './coran/coran.component';
+import { HadithComponent } from './hadith/hadith.component';
+import { HomeComponent } from './home/home.component';
+import { CoursArabeComponent } from './cours-arabe/cours-arabe.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'personnes', component: PersonnesComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'coran', component: CoranComponent },
+  { path: 'hadith', component: HadithComponent },
+  { path: 'coursarabe', component: CoursArabeComponent }
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [],
+  imports: [
+ 
+    RouterModule.forRoot(routes, {
+      enableTracing: false,
+      anchorScrolling: 'enabled'
+    })
+  ],
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
-

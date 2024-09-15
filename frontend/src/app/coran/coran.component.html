@@ -1,0 +1,105 @@
+<div class="conteneurDeBase">
+    <div class="styque" style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap;  ">
+
+
+            <div  class="select">
+              <select class="box" [(ngModel)]="myDropDown" (ngModelChange)="onChangeofOptions($event)">
+                <option *ngFor="let sourah of listeSourah.data" value="{{sourah.number}}">{{sourah.name}} -
+                  {{sourah.number}} -{{sourah.englishName}}</option>
+
+              </select>
+            </div>
+
+            <div>
+              <button (click)="playayaAr()">lire(ar)</button>
+            </div>
+            <div>
+              <button (click)="playayaFr()">lire(fr)</button>
+            </div>
+            <div>
+              <button (click)="pauseaya()">pause</button>
+            </div>
+            <div>
+              <button (click)="reprendreaya()">reprendre</button>
+            </div>
+            <div>
+
+                <label style="color: white;" for="">Arabe</label>
+                <input  type="checkbox" [(ngModel)]="isArabChecked"
+         (change)="isArabChecked?true:false">
+
+
+                <label style="color: white;" for="">Français</label>
+                <input type="checkbox"
+                [(ngModel)]="isFrChecked"
+         (change)="isFrChecked?true:false"
+                >
+
+
+                <label style="color: white;" for="">Translitération</label>
+                <input type="checkbox"
+                [(ngModel)]="isTransChecked"
+         (change)="isTransChecked?true:false"
+                >
+
+            </div>
+
+
+    </div>
+
+
+  <div style="margin-top: 3vh;">
+        <div class="aya" *ngFor="let aya of sourah.ayas; index as i" id="{{i+1}}" >
+      <div style="display: flex; justify-content:space-evenly; align-items: center; flex-wrap: wrap;">
+        <div>
+          <p>{{i+1}}/ {{sourah.ayas.length}}</p>
+        </div>
+      </div>
+
+      <div *ngIf="isArabChecked" style="display: flex;flex-direction: row; justify-content:center; align-items: center; flex-wrap: wrap;background-color: rgb(97, 217, 177,0.05);padding: 5px 20px;">
+        <div >
+          <p class="font-kitab " [ngClass]="{'blueH2': i == currentIndex}" >{{aya.ayaAr}}</p>
+        </div>
+        <div style="padding: 2vw;">
+          <!-- <audio  controls controlsList="nodownload noplaybackrate">
+
+            <source [src]="aya.audioAr" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio> -->
+          <button (click)="playanayaAr(i)">relire</button>
+        </div>
+
+      </div>
+      <div *ngIf="isTransChecked" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;background-color: rgba(232, 184, 94, 0.05);padding: 5px 20px;">
+        <div>
+          <p class="font-kitab-fr ">{{aya.ayatr}}</p>
+        </div>
+        <div style="padding: 2vw;">
+          <!-- <audio  controls controlsList="nodownload noplaybackrate">
+
+            <source [src]="aya.audioAr" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio> -->
+          <button (click)="playanayaAr(i)">relire</button>
+        </div>
+      </div>
+      <div *ngIf="isFrChecked" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;background-color: rgba(90, 201, 231, 0.05);padding: 5px 20px;">
+        <div>
+          <p class="font-kitab-fr " [ngClass]="{'greenH2': i == currentIndex}" >{{aya.ayaFr}}</p>
+        </div>
+        <div style="padding: 2vw;">
+          <button (click)="playanayaFr(i)">relire</button>
+          <!-- <audio  controls controlsList="nodownload noplaybackrate">
+
+            <source  [src]="aya.audioFr" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio> -->
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  </div>
