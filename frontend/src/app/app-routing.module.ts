@@ -20,8 +20,7 @@ const routes: Routes = [
   imports: [
  
     RouterModule.forRoot(routes, {
-      enableTracing: false,
-      anchorScrolling: 'enabled'
+      useHash: false
     })
   ],
   exports: [ RouterModule ]

@@ -17,13 +17,14 @@ COPY . .
 RUN npm install -g @angular/cli
 
 # Construire l'application en mode production
-RUN ng build 
+RUN ng build --configuration=production
 
 # Étape 2 : Utiliser une image NGINX pour servir l'application
 FROM nginx:alpine
 
 # Copier les fichiers construits depuis l'étape de build
-COPY --from=build /usr/src/app/dist/coranconsumer /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Exposer le port 80 pour accéder à l'application
 EXPOSE 80
