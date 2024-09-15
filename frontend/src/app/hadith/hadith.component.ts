@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AdithService } from '../services/hadith/adith.service';
 import { Hadith } from '../model/hadith.modele';
 import { CollectionsHadiths } from '../model/collectionsHadiths.modele';
@@ -9,94 +9,88 @@ import { CollectionsHadiths } from '../model/collectionsHadiths.modele';
   styleUrls: ['./hadith.component.css']
 })
 export class HadithComponent implements OnInit {
-  
-  
-title : string = "";
-  listeHadiths : Hadith[] = [];
-  hadith  : Hadith = new Hadith();
-  categorieNumber : number = 1;
-  myDropDown : string = "1";
-  listeCategories : CollectionsHadiths[] = [];
-categorie : CollectionsHadiths = new CollectionsHadiths();
-  constructor( public adithService : AdithService,private elementRef: ElementRef<HTMLElement>){}
- 
-  onChangeofOptions(newGov: any) {
-    console.log("+++++++",this.myDropDown);
-    this.listeCategories.forEach((element)=>{
-      if (element.id == newGov) this.title = element.title;
-    });
-  
-    this.categorieNumber = newGov;
-    this.listeHadiths = [];
-    this.getListHadithByCategorie();
-   
-     
-}
+
+  title: string = "";
+  listeHadiths: Hadith[] = [];
+  selectedHadith: Hadith | null = null;
+  isDialogOpen: boolean = false;
+  myDropDown: string = "1";
+  listeCategories: CollectionsHadiths[] = [];
+  categorieNumber: number = 1;
+
+  constructor(public adithService: AdithService) { }
 
   ngOnInit(): void {
-  
-
     this.adithService.getHadithCategorie().subscribe({
-      next : (data) => {
-        data.forEach((element : any)=>{
-          this.categorie = new CollectionsHadiths();
-          this.categorie.id = element.id;
-          this.categorie.title = element.title;
-          this.categorie.hadeeths_count = element.hadeeths_count;
-          this.categorie.parent_id = element.parent_id;
-          this.listeCategories.push(this.categorie);
+      next: (data) => {
+        this.listeCategories = data.map((element: any) => {
+          const categorie = new CollectionsHadiths();
+          categorie.id = element.id;
+          categorie.title = element.title;
+          categorie.hadeeths_count = element.hadeeths_count;
+          categorie.parent_id = element.parent_id;
+          return categorie;
         });
+        this.getListHadithByCategorie();
       },
-      error : () => {},
-      complete : () => {
-        this.listeCategories.forEach((element)=>{
+      error: () => { },
+      complete: () => {
+        this.listeCategories.forEach((element) => {
           if (element.id == this.categorieNumber) this.title = element.title;
         });
         this.getListHadithByCategorie();
       }
     });
-
-
-
-
-    
   }
 
-  getListHadithByCategorie(){
+  onChangeofOptions(newGov: any) {
+    this.categorieNumber = newGov;
+    this.listeHadiths = [];
+    this.getListHadithByCategorie();
+  }
+
+  getListHadithByCategorie() {
     this.adithService.getHadithsList(this.categorieNumber).subscribe({
-      next : (data) => {
-        console.log(data);
-        
-        data.data.forEach((element : any)=>{
-          this.hadith = new Hadith();
-          this.hadith.id = element.id;
-          this.hadith.title = element.title;
-          this.listeHadiths.push(this.hadith);
+      next: (data) => {
+        this.listeHadiths = data.data.map((element: any) => {
+          const hadith = new Hadith();
+          hadith.id = element.id;
+          hadith.title = element.title;
+          hadith.hadeeth = element.hadeeth;
+          hadith.attribution = element.attribution;
+          hadith.grade = element.grade;
+          hadith.explanation = element.explanation;
+          hadith.hadeeth_ar = element.hadeeth_ar;
+          hadith.explanation_ar = element.explanation_ar;
+          hadith.grade_ar = element.grade_ar;
+          return hadith;
         });
-      }
-    });
-  }
-
-  hadithExplaynation(id :number){
-    this.adithService.getHadithDetail(id).subscribe({
-      next : (data :any) => {
-        console.log(data);
         
-       
-       
-          this.hadith.id = data.id;
-          this.hadith.title = data.title;
-          this.hadith.hadeeth = data.hadeeth;
-          this.hadith.attribution = data.attribution;
-          this.hadith.grade = data.grade;
-          this.hadith.explanation = data.explanation;
-          this.hadith.hadeeth_ar = data.hadeeth_ar;
-          this.hadith.explanation_ar = data.explanation_ar;
-          this.hadith.grade_ar = data.grade_ar;
-           
-       
       }
     });
   }
 
+  openDialog(hadith: Hadith) {
+    this.adithService.getHadithDetail(Number(hadith.id)).subscribe({
+      next: (data: any) => {
+        this.selectedHadith = {
+          id: data.id,
+          title: data.title,
+          hadeeth: data.hadeeth,
+          attribution: data.attribution,
+          grade: data.grade,
+          explanation: data.explanation,
+          hadeeth_ar: data.hadeeth_ar,
+          explanation_ar: data.explanation_ar,
+          grade_ar: data.grade_ar
+        };
+        this.isDialogOpen = true;
+      }
+    });
+  }
+
+  closeDialog() {
+    this.isDialogOpen = false;
+    this.selectedHadith = null;
+  }
 }

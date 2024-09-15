@@ -10,33 +10,33 @@
 
   <!-- Liste des hadiths -->
   <div class="content-container">
-    <div class="aya-card" *ngFor="let had of listeHadiths; index as i" id="{{i+1}}">
+    <div class="aya-card" *ngFor="let had of listeHadiths; index as i">
       <div class="aya-header">
-        <p>{{i+1}} / {{listeHadiths.length}}</p>
+        <p>{{i + 1}} / {{listeHadiths.length}}</p>
       </div>
 
       <div class="aya-content">
         <h1 class="aya-title">{{had.title}}</h1>
-        <button class="button-detail" (click)="hadithExplaynation(+had.id);dialog.showModal()">Détail</button>
+        <button class="button-detail" (click)="openDialog(had)">Détail</button>
       </div>
+    </div>
+  </div>
 
-      <!-- Modal dialog -->
-      <dialog id="dialog" #dialog class="modal-dialog">
-        <div class="modal-content">
-          <h2>{{hadith.title}}</h2>
-          <p>{{hadith.hadeeth}}</p>
-          <hr>
-          <p><strong>Attribution :</strong> {{hadith.attribution}}</p>
-          <p><strong>Grade :</strong> {{hadith.grade}}</p>
-          <hr>
-          <p>{{hadith.hadeeth_ar}}</p>
-          <p><strong>Explication (Arabe) :</strong> {{hadith.explanation_ar}}</p>
-          <p><strong>Grade (Arabe) :</strong> {{hadith.grade_ar}}</p>
-        </div>
-        <div class="modal-footer">
-          <button class="button-close" (click)="dialog.close()">Fermer</button>
-        </div>
-      </dialog>
+  <!-- Modal dialog -->
+  <div *ngIf="isDialogOpen" class="modal-overlay" (click)="closeDialog()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h2>{{selectedHadith?.title}}</h2>
+      <p>{{selectedHadith?.hadeeth}}</p>
+      <hr>
+      <p><strong>Attribution :</strong> {{selectedHadith?.attribution}}</p>
+      <p><strong>Grade :</strong> {{selectedHadith?.grade}}</p>
+      <hr>
+      <p>{{selectedHadith?.hadeeth_ar}}</p>
+      <p><strong>Explication (Arabe) :</strong> {{selectedHadith?.explanation_ar}}</p>
+      <p><strong>Grade (Arabe) :</strong> {{selectedHadith?.grade_ar}}</p>
+      <div class="modal-footer">
+        <button class="button-close" (click)="closeDialog()">Fermer</button>
+      </div>
     </div>
   </div>
 </div>

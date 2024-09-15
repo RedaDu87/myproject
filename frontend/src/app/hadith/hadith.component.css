@@ -1,146 +1,169 @@
-/* Conteneur principal */
-.conteneurDeBase {
-  width: 100%;
-  padding: 20px;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Barre de sélection */
+/* Styles globaux */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Conteneur de base */
+.conteneurDeBase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: #003d4d;
   padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .select-container {
-  width: 100%;
-  max-width: 400px;
+  text-align: center;
 }
 
 .select-box {
-  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #f1f1f1;
-  font-size: 16px;
-  color: #333;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: border-color 0.3s ease;
 }
 
-/* Liste des hadiths */
+.select-box:focus {
+  border-color: #003d4d;
+  outline: none;
+}
+
+/* Conteneur du contenu */
 .content-container {
-  width: 100%;
-  max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .aya-card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .aya-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .aya-header {
-  font-size: 14px;
-  font-weight: bold;
-  color: #999;
+  background: #003d4d;
+  color: #fff;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .aya-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .aya-title {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
   color: #333;
 }
 
 .button-detail {
-  padding: 10px 20px;
-  background-color: #36b37e;
-  color: white;
+  display: inline-block;
+  background-color: #003d4d;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button-detail:hover {
-  background-color: #2f9e6d;
+  background-color: #002a34;
+  transform: scale(1.05);
 }
 
 /* Modal dialog */
-.modal-dialog {
-  background-color: white;
-  border: none;
-  border-radius: 12px;
+.modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.modal-content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.modal-content p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #666;
+  max-width: 90%;
+  width: 90%;
+  position: relative;
+  overflow: auto;
 }
 
 .modal-footer {
   text-align: center;
-  margin-top: 20px;
+  padding: 10px;
+  background: #f4f4f4;
 }
 
 .button-close {
-  padding: 10px 20px;
-  background-color: #e53935;
-  color: white;
+  background-color: #e74c3c;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button-close:hover {
-  background-color: #d32f2f;
+  background-color: #c0392b;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .content-container {
-    padding: 10px;
+  .select-box {
+    width: 100%;
   }
 
   .aya-card {
-    padding: 15px;
-  }
-
-  .select-container {
     max-width: 100%;
   }
 }
