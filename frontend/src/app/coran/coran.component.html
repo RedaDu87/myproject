@@ -1,6 +1,6 @@
 <div class="conteneurDeBase">
   <!-- Barre de sélection de la sourate -->
-  <div class="header">
+  <div class="libelle">
     <div class="select">
       <select class="box" [(ngModel)]="myDropDown" (ngModelChange)="onChangeofOptions($event)">
         <option *ngFor="let sourah of listeSourah.data" value="{{sourah.number}}">
@@ -42,8 +42,8 @@
 
     <!-- Affichage en arabe -->
     <div *ngIf="isArabChecked" [ngClass]="{'highlight': i === currentIndex}" class="aya-content">
-      <p class="aya-text">{{aya.ayaAr}}</p>
-      <button class="icon-button" (click)="playanayaAr(i)" matTooltip="Relire (Arabe)">
+      <p class="aya-text-ar">{{aya.ayaAr}}</p>
+      <button class="icon-button-aya" (click)="playanayaAr(i)" matTooltip="Relire (Arabe)">
         <i class="fas fa-redo"></i>
       </button>
     </div>
@@ -51,7 +51,7 @@
     <!-- Affichage de la translitération -->
     <div *ngIf="isTransChecked" class="aya-content">
       <p class="aya-text">{{aya.ayatr}}</p>
-      <button class="icon-button" (click)="playanayaAr(i)" matTooltip="Relire (Arabe)">
+      <button class="icon-button-aya" (click)="playanayaAr(i)" matTooltip="Relire (Arabe)">
         <i class="fas fa-redo"></i>
       </button>
     </div>
@@ -59,7 +59,7 @@
     <!-- Affichage en français -->
     <div *ngIf="isFrChecked" [ngClass]="{'highlight': i === currentIndex}" class="aya-content">
       <p class="aya-text">{{aya.ayaFr}}</p>
-      <button class="icon-button" (click)="playanayaFr(i)" matTooltip="Relire (Français)">
+      <button class="icon-button-aya" (click)="playanayaFr(i)" matTooltip="Relire (Français)">
         <i class="fas fa-redo"></i>
       </button>
     </div>
