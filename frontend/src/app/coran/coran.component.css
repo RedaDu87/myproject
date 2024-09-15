@@ -166,7 +166,7 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  background-color: #ad3c3c;
+  background-color: #f0f0f0;
   margin: 0px 0;
   border-radius: 8px;
 }
@@ -179,7 +179,7 @@ input[type="checkbox"] {
 }
 
 .aya-text {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #333;
   flex: 1;
   text-align: center;
