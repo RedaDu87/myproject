@@ -16,7 +16,7 @@ export class CoranComponent implements AfterViewInit{
   @ViewChild('someTag') myDiv!: ElementRef;
 
   isArabChecked = true;
-  isFrChecked = false;
+  isFrChecked = true;
   isTransChecked = false;
   title : any = "";
 

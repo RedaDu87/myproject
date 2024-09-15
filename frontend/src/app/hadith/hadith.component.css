@@ -42,7 +42,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 10px;
-  font-size: 1em;
+  font-size: 2em;
+  font-weight: bold;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
@@ -130,7 +131,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 90%;
+  max-width: 1200px;
   width: 90%;
   max-height: 80vh; /* Maximum height of the modal */
   overflow-y: auto; /* Enable vertical scrolling */
