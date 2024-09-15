@@ -201,3 +201,47 @@ input[type="checkbox"] {
     margin-top: 10px;
   }
 }
+/* Style de base pour l'icône du bouton */
+.icon-button {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Conteneur du tooltip */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px; /* Largeur du tooltip */
+  background-color: #555; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Positionner le tooltip au-dessus du bouton */
+  left: 50%;
+  margin-left: -60px; /* Centrer le tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Petite flèche du tooltip */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* En bas du tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Montrer le tooltip lors du hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.9;
+}

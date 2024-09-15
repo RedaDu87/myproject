@@ -10,17 +10,21 @@
     </div>
 
     <div class="controls">
-      <button class="icon-button" (click)="playayaAr()" matTooltip="Lire (Arabe)">
+      <button class="icon-button  tooltip" (click)="playayaAr()">
         <i class="fas fa-play"></i>
+        <span class="tooltiptext">Lire depuis le début en arabe</span>
       </button>
-      <button class="icon-button" (click)="playayaFr()" matTooltip="Lire (Français)">
+      <button class="icon-button tooltip" (click)="playayaFr()">
         <i class="fas fa-play"></i>
+        <span class="tooltiptext">Lire depuis le début en français</span>
       </button>
-      <button class="icon-button" (click)="pauseaya()" matTooltip="Pause">
+      <button class="icon-button tooltip" (click)="pauseaya()">
         <i class="fas fa-pause"></i>
+        <span class="tooltiptext">Pause</span>
       </button>
-      <button class="icon-button" (click)="reprendreaya()" matTooltip="Reprendre">
+      <button class="icon-button tooltip" (click)="reprendreaya()">
         <i class="fas fa-redo"></i>
+        <span class="tooltiptext">Reprendre en arabe</span>
       </button>
     </div>
 
