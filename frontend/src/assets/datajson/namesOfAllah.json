@@ -1,0 +1,627 @@
+[
+    {
+      "name": "الرَّحْمَـٰنُ",
+      "transliteration": "Ar-Rahmān",
+      "meaning": "Le Tout-Miséricordieux",
+      "description": "Celui qui accorde sa miséricorde et sa bienveillance à toute la création, indépendamment de leur foi ou de leurs actions."
+    },
+    {
+      "name": "الرَّحِيمُ",
+      "transliteration": "Ar-Rahīm",
+      "meaning": "Le Très-Miséricordieux",
+      "description": "Celui qui offre une miséricorde spécifique et infinie aux croyants, surtout dans l’au-delà."
+    },
+    {
+      "name": "الْمَلِكُ",
+      "transliteration": "Al-Mālik",
+      "meaning": "Le Souverain",
+      "description": "Celui qui règne sur tout l'univers, avec autorité et pouvoir absolus. Il est le Maître incontesté de toutes choses."
+    },
+    {
+      "name": "الْقُدُّوسُ",
+      "transliteration": "Al-Quddūs",
+      "meaning": "Le Très-Saint",
+      "description": "Celui qui est pur de toute imperfection et dont la sainteté est au-delà de toute compréhension humaine."
+    },
+    {
+      "name": "السَّلَامُ",
+      "transliteration": "As-Salām",
+      "meaning": "La Paix",
+      "description": "Celui qui est source de paix, de sécurité, et de tranquillité. Il est aussi celui qui est exempt de défauts et de contradictions."
+    },
+    {
+      "name": "الْمُؤْمِنُ",
+      "transliteration": "Al-Mu’min",
+      "meaning": "Le Garant de la Sécurité",
+      "description": "Celui qui donne la sécurité et la foi. Il assure la protection des croyants et garantit leur sécurité spirituelle."
+    },
+    {
+      "name": "الْمُهَيْمِنُ",
+      "transliteration": "Al-Muhaymin",
+      "meaning": "Le Protecteur",
+      "description": "Celui qui surveille et protège tout l'univers avec une surveillance constante et bienveillante."
+    },
+    {
+      "name": "الْعَزِيزُ",
+      "transliteration": "Al-‘Azīz",
+      "meaning": "Le Tout-Puissant",
+      "description": "Celui qui est omnipotent et invincible. Il est capable de tout faire et personne ne peut l'affaiblir."
+    },
+    {
+      "name": "الْجَبَّارُ",
+      "transliteration": "Al-Jabbār",
+      "meaning": "Le Contraignant",
+      "description": "Celui qui répare et corrige les choses brisées, et qui a le pouvoir d'imposer Sa volonté avec force et autorité."
+    },
+    {
+      "name": "الْمُتَكَبِّرُ",
+      "transliteration": "Al-Mutakabbir",
+      "meaning": "L'Inaccessible",
+      "description": "Celui qui est infiniment grand et majestueux. Il est au-dessus de tout ce qui existe et est exempt de toute arrogance."
+    },
+    {
+      "name": "الْخَالِقُ",
+      "transliteration": "Al-Khāliq",
+      "meaning": "Le Créateur",
+      "description": "Celui qui crée toutes choses à partir de rien, avec une sagesse infinie et une perfection absolue."
+    },
+    {
+      "name": "الْبَارِئُ",
+      "transliteration": "Al-Bāri’",
+      "meaning": "L’Évoluer",
+      "description": "Celui qui crée les créatures en leur donnant leur forme parfaite et leur fonction, en évoluant selon ses desseins."
+    },
+    {
+      "name": "الْمُصَوِّرُ",
+      "transliteration": "Al-Musawwir",
+      "meaning": "Le Modeleur",
+      "description": "Celui qui donne forme et apparence à toutes les créatures, façonnant leurs caractéristiques avec précision."
+    },
+    {
+      "name": "الْغَفَّارُ",
+      "transliteration": "Al-Ghaffār",
+      "meaning": "Le Pardonneur",
+      "description": "Celui qui pardonne encore et encore, sans limite, offrant une seconde chance à ceux qui se repentent sincèrement."
+    },
+    {
+      "name": "الْقَهَّارُ",
+      "transliteration": "Al-Qahhār",
+      "meaning": "L'Omnipotent",
+      "description": "Celui qui domine tout avec une puissance inégalée, imposant Sa volonté à toute chose."
+    },
+    {
+      "name": "الْوَهَّابُ",
+      "transliteration": "Al-Wahhāb",
+      "meaning": "Le Donateur",
+      "description": "Celui qui donne abondamment et continuellement, offrant des bénédictions et des bienfaits sans fin."
+    },
+    {
+      "name": "الْرَّزَّاقُ",
+      "transliteration": "Ar-Razzāq",
+      "meaning": "Le Pourvoyeur",
+      "description": "Celui qui pourvoit aux besoins de toute la création, assurant leur subsistance avec générosité et précision."
+    },
+    {
+      "name": "الْفَتَّاحُ",
+      "transliteration": "Al-Fattāḥ",
+      "meaning": "L'Ouverture",
+      "description": "Celui qui ouvre des opportunités, résout les problèmes et accorde la réussite."
+    },
+    {
+      "name": "الْعَلِيمُ",
+      "transliteration": "Al-‘Alīm",
+      "meaning": "L'Omniscient",
+      "description": "Celui qui sait tout, sans exception, connaissant les secrets les plus cachés et les pensées les plus profondes."
+    },
+    {
+      "name": "الْقَابِضُ",
+      "transliteration": "Al-Qābid",
+      "meaning": "Le Retenteur",
+      "description": "Celui qui retient, contrôle et limite les choses selon Sa volonté divine, notamment les provisions et les bénédictions."
+    },
+    {
+      "name": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "meaning": "L'Étendeur",
+      "description": "Celui qui étend, accorde et répand Ses bénédictions et provisions, donnant abondance à qui Il veut."
+    },
+    {
+      "name": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et diminue, modifiant les positions et les statuts selon Sa volonté divine."
+    },
+    {
+      "name": "الْرَّافِعُ",
+      "transliteration": "Ar-Rāfi’",
+      "meaning": "L'Éleveur",
+      "description": "Celui qui élève, honore et exalte, changeant les positions et les statuts selon Sa sagesse."
+    },
+    {
+      "name": "الْمُعِزُّ",
+      "transliteration": "Al-Mu’izz",
+      "meaning": "Le Donneur de Pouvoir",
+      "description": "Celui qui accorde l’honneur, la dignité et le pouvoir, élevant ceux qu’Il choisit."
+    },
+    {
+      "name": "الْمُذِلُّ",
+      "transliteration": "Al-Muzil",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et humilie selon Sa volonté, retirant l'honneur de certains lorsqu’Il le décide."
+    },
+    {
+      "name": "الْسَمِيعُ",
+      "transliteration": "As-Samī‘",
+      "meaning": "L'Audient",
+      "description": "Celui qui entend tout, même les murmures les plus faibles et les secrets les plus cachés."
+    },
+    {
+      "name": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "meaning": "Le Voyant",
+      "description": "Celui qui voit tout, sans exception, ayant une vue claire et complète sur toutes les choses."
+    },
+    {
+      "name": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "meaning": "Le Juge",
+      "description": "Celui qui juge avec justice, en utilisant Sa connaissance parfaite et Sa sagesse infinie."
+    },
+    {
+      "name": "الْعَدْلُ",
+      "transliteration": "Al-‘Adl",
+      "meaning": "Le Juste",
+      "description": "Celui qui est parfaitement juste, ne commettant aucune injustice et traitant tout le monde avec équité."
+    },
+    {
+      "name": "الْلَطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "meaning": "Le Subtil",
+      "description": "Celui qui est extrêmement délicat et subtil dans Ses actions et Ses bienfaits, apportant des bénédictions d'une manière douce et cachée."
+    },
+    {
+      "name": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "meaning": "L'Expert",
+      "description": "Celui qui possède une connaissance complète et parfaite de toutes les choses, incluant les détails les plus fins."
+    },
+    {
+      "name": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "meaning": "Le Clément",
+      "description": "Celui qui est extrêmement patient et compréhensif, même envers les créatures qui agissent mal à Son égard."
+    },
+    {
+      "name": "الْعَظِيمُ",
+      "transliteration": "Al-‘Aẓīm",
+      "meaning": "Le Magnifique",
+      "description": "Celui dont la grandeur et la majesté sont infinies, surpassant tout ce que les êtres humains peuvent imaginer."
+    },
+    {
+      "name": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "meaning": "Le Pardonneur",
+      "description": "Celui qui pardonne les péchés de Ses serviteurs avec une grande générosité et sans limite."
+    },
+    {
+      "name": "الْقَابِضُ",
+      "transliteration": "Al-Qābid",
+      "meaning": "Le Retenteur",
+      "description": "Celui qui retient et limite certaines choses, régulant ainsi les bénédictions et les provisions selon Sa sagesse."
+    },
+    {
+      "name": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "meaning": "L'Étendeur",
+      "description": "Celui qui étend et répand Ses bénédictions et provisions, apportant abondance et prospérité."
+    },
+    {
+      "name": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et diminue, régulant les positions et les statuts selon Sa volonté."
+    },
+    {
+      "name": "الْرَّافِعُ",
+      "transliteration": "Ar-Rāfi’",
+      "meaning": "L'Éleveur",
+      "description": "Celui qui élève et honore, changeant les positions et les statuts selon Sa sagesse infinie."
+    },
+    {
+      "name": "الْمُعِزُّ",
+      "transliteration": "Al-Mu’izz",
+      "meaning": "Le Donneur de Pouvoir",
+      "description": "Celui qui accorde l'honneur et le pouvoir à ceux qu’Il choisit, leur donnant dignité et respect."
+    },
+    {
+      "name": "الْمُذِلُّ",
+      "transliteration": "Al-Muzil",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et humilie selon Sa volonté, retirant l'honneur et la dignité de certains lorsqu’Il le décide."
+    },
+    {
+      "name": "الْسَمِيعُ",
+      "transliteration": "As-Samī‘",
+      "meaning": "L'Audient",
+      "description": "Celui qui entend tout, même les murmures les plus faibles et les secrets les plus cachés."
+    },
+    {
+      "name": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "meaning": "Le Voyant",
+      "description": "Celui qui voit tout, sans exception, ayant une vue claire et complète sur toutes les choses."
+    },
+    {
+      "name": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "meaning": "Le Juge",
+      "description": "Celui qui juge avec justice, en utilisant Sa connaissance parfaite et Sa sagesse infinie."
+    },
+    {
+      "name": "الْعَدْلُ",
+      "transliteration": "Al-‘Adl",
+      "meaning": "Le Juste",
+      "description": "Celui qui est parfaitement juste, ne commettant aucune injustice et traitant tout le monde avec équité."
+    },
+    {
+      "name": "الْلَطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "meaning": "Le Subtil",
+      "description": "Celui qui est extrêmement délicat et subtil dans Ses actions et Ses bienfaits, apportant des bénédictions d'une manière douce et cachée."
+    },
+    {
+      "name": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "meaning": "L'Expert",
+      "description": "Celui qui possède une connaissance complète et parfaite de toutes les choses, incluant les détails les plus fins."
+    },
+    {
+      "name": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "meaning": "Le Clément",
+      "description": "Celui qui est extrêmement patient et compréhensif, même envers les créatures qui agissent mal à Son égard."
+    },
+    {
+      "name": "الْعَظِيمُ",
+      "transliteration": "Al-‘Aẓīm",
+      "meaning": "Le Magnifique",
+      "description": "Celui dont la grandeur et la majesté sont infinies, surpassant tout ce que les êtres humains peuvent imaginer."
+    },
+    {
+      "name": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "meaning": "Le Pardonneur",
+      "description": "Celui qui pardonne les péchés de Ses serviteurs avec une grande générosité et sans limite."
+    },
+    {
+      "name": "الْقَابِضُ",
+      "transliteration": "Al-Qābid",
+      "meaning": "Le Retenteur",
+      "description": "Celui qui retient et limite certaines choses, régulant ainsi les bénédictions et les provisions selon Sa sagesse."
+    },
+    {
+      "name": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "meaning": "L'Étendeur",
+      "description": "Celui qui étend et répand Ses bénédictions et provisions, apportant abondance et prospérité."
+    },
+    {
+      "name": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et diminue, régulant les positions et les statuts selon Sa volonté."
+    },
+    {
+      "name": "الْرَّافِعُ",
+      "transliteration": "Ar-Rāfi’",
+      "meaning": "L'Éleveur",
+      "description": "Celui qui élève et honore, changeant les positions et les statuts selon Sa sagesse infinie."
+    },
+    {
+      "name": "الْمُعِزُّ",
+      "transliteration": "Al-Mu’izz",
+      "meaning": "Le Donneur de Pouvoir",
+      "description": "Celui qui accorde l'honneur et le pouvoir à ceux qu’Il choisit, leur donnant dignité et respect."
+    },
+    {
+      "name": "الْمُذِلُّ",
+      "transliteration": "Al-Muzil",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et humilie selon Sa volonté, retirant l'honneur et la dignité de certains lorsqu’Il le décide."
+    },
+    {
+      "name": "الْسَمِيعُ",
+      "transliteration": "As-Samī‘",
+      "meaning": "L'Audient",
+      "description": "Celui qui entend tout, même les murmures les plus faibles et les secrets les plus cachés."
+    },
+    {
+      "name": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "meaning": "Le Voyant",
+      "description": "Celui qui voit tout, sans exception, ayant une vue claire et complète sur toutes les choses."
+    },
+    {
+      "name": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "meaning": "Le Juge",
+      "description": "Celui qui juge avec justice, en utilisant Sa connaissance parfaite et Sa sagesse infinie."
+    },
+    {
+      "name": "الْعَدْلُ",
+      "transliteration": "Al-‘Adl",
+      "meaning": "Le Juste",
+      "description": "Celui qui est parfaitement juste, ne commettant aucune injustice et traitant tout le monde avec équité."
+    },
+    {
+      "name": "الْلَطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "meaning": "Le Subtil",
+      "description": "Celui qui est extrêmement délicat et subtil dans Ses actions et Ses bienfaits, apportant des bénédictions d'une manière douce et cachée."
+    },
+    {
+      "name": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "meaning": "L'Expert",
+      "description": "Celui qui possède une connaissance complète et parfaite de toutes les choses, incluant les détails les plus fins."
+    },
+    {
+      "name": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "meaning": "Le Clément",
+      "description": "Celui qui est extrêmement patient et compréhensif, même envers les créatures qui agissent mal à Son égard."
+    },
+    {
+      "name": "الْعَظِيمُ",
+      "transliteration": "Al-‘Aẓīm",
+      "meaning": "Le Magnifique",
+      "description": "Celui dont la grandeur et la majesté sont infinies, surpassant tout ce que les êtres humains peuvent imaginer."
+    },
+    {
+      "name": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "meaning": "Le Pardonneur",
+      "description": "Celui qui pardonne les péchés de Ses serviteurs avec une grande générosité et sans limite."
+    },
+    {
+      "name": "الْقَابِضُ",
+      "transliteration": "Al-Qābid",
+      "meaning": "Le Retenteur",
+      "description": "Celui qui retient et limite certaines choses, régulant ainsi les bénédictions et les provisions selon Sa sagesse."
+    },
+    {
+      "name": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "meaning": "L'Étendeur",
+      "description": "Celui qui étend et répand Ses bénédictions et provisions, apportant abondance et prospérité."
+    },
+    {
+      "name": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et diminue, régulant les positions et les statuts selon Sa volonté."
+    },
+    {
+      "name": "الْرَّافِعُ",
+      "transliteration": "Ar-Rāfi’",
+      "meaning": "L'Éleveur",
+      "description": "Celui qui élève et honore, changeant les positions et les statuts selon Sa sagesse infinie."
+    },
+    {
+      "name": "الْمُعِزُّ",
+      "transliteration": "Al-Mu’izz",
+      "meaning": "Le Donneur de Pouvoir",
+      "description": "Celui qui accorde l'honneur et le pouvoir à ceux qu’Il choisit, leur donnant dignité et respect."
+    },
+    {
+      "name": "الْمُذِلُّ",
+      "transliteration": "Al-Muzil",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et humilie selon Sa volonté, retirant l'honneur et la dignité de certains lorsqu’Il le décide."
+    },
+    {
+      "name": "الْسَمِيعُ",
+      "transliteration": "As-Samī‘",
+      "meaning": "L'Audient",
+      "description": "Celui qui entend tout, même les murmures les plus faibles et les secrets les plus cachés."
+    },
+    {
+      "name": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "meaning": "Le Voyant",
+      "description": "Celui qui voit tout, sans exception, ayant une vue claire et complète sur toutes les choses."
+    },
+    {
+      "name": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "meaning": "Le Juge",
+      "description": "Celui qui juge avec justice, en utilisant Sa connaissance parfaite et Sa sagesse infinie."
+    },
+    {
+      "name": "الْعَدْلُ",
+      "transliteration": "Al-‘Adl",
+      "meaning": "Le Juste",
+      "description": "Celui qui est parfaitement juste, ne commettant aucune injustice et traitant tout le monde avec équité."
+    },
+    {
+      "name": "الْلَطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "meaning": "Le Subtil",
+      "description": "Celui qui est extrêmement délicat et subtil dans Ses actions et Ses bienfaits, apportant des bénédictions d'une manière douce et cachée."
+    },
+    {
+      "name": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "meaning": "L'Expert",
+      "description": "Celui qui possède une connaissance complète et parfaite de toutes les choses, incluant les détails les plus fins."
+    },
+    {
+      "name": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "meaning": "Le Clément",
+      "description": "Celui qui est extrêmement patient et compréhensif, même envers les créatures qui agissent mal à Son égard."
+    },
+    {
+      "name": "الْعَظِيمُ",
+      "transliteration": "Al-‘Aẓīm",
+      "meaning": "Le Magnifique",
+      "description": "Celui dont la grandeur et la majesté sont infinies, surpassant tout ce que les êtres humains peuvent imaginer."
+    },
+    {
+      "name": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "meaning": "Le Pardonneur",
+      "description": "Celui qui pardonne les péchés de Ses serviteurs avec une grande générosité et sans limite."
+    },
+    {
+      "name": "الْقَابِضُ",
+      "transliteration": "Al-Qābid",
+      "meaning": "Le Retenteur",
+      "description": "Celui qui retient et limite certaines choses, régulant ainsi les bénédictions et les provisions selon Sa sagesse."
+    },
+    {
+      "name": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "meaning": "L'Étendeur",
+      "description": "Celui qui étend et répand Ses bénédictions et provisions, apportant abondance et prospérité."
+    },
+    {
+      "name": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et diminue, régulant les positions et les statuts selon Sa volonté."
+    },
+    {
+      "name": "الْرَّافِعُ",
+      "transliteration": "Ar-Rāfi’",
+      "meaning": "L'Éleveur",
+      "description": "Celui qui élève et honore, changeant les positions et les statuts selon Sa sagesse infinie."
+    },
+    {
+      "name": "الْمُعِزُّ",
+      "transliteration": "Al-Mu’izz",
+      "meaning": "Le Donneur de Pouvoir",
+      "description": "Celui qui accorde l'honneur et le pouvoir à ceux qu’Il choisit, leur donnant dignité et respect."
+    },
+    {
+      "name": "الْمُذِلُّ",
+      "transliteration": "Al-Muzil",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et humilie selon Sa volonté, retirant l'honneur et la dignité de certains lorsqu’Il le décide."
+    },
+    {
+      "name": "الْسَمِيعُ",
+      "transliteration": "As-Samī‘",
+      "meaning": "L'Audient",
+      "description": "Celui qui entend tout, même les murmures les plus faibles et les secrets les plus cachés."
+    },
+    {
+      "name": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "meaning": "Le Voyant",
+      "description": "Celui qui voit tout, sans exception, ayant une vue claire et complète sur toutes les choses."
+    },
+    {
+      "name": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "meaning": "Le Juge",
+      "description": "Celui qui juge avec justice, en utilisant Sa connaissance parfaite et Sa sagesse infinie."
+    },
+    {
+      "name": "الْعَدْلُ",
+      "transliteration": "Al-‘Adl",
+      "meaning": "Le Juste",
+      "description": "Celui qui est parfaitement juste, ne commettant aucune injustice et traitant tout le monde avec équité."
+    },
+    {
+      "name": "الْلَطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "meaning": "Le Subtil",
+      "description": "Celui qui est extrêmement délicat et subtil dans Ses actions et Ses bienfaits, apportant des bénédictions d'une manière douce et cachée."
+    },
+    {
+      "name": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "meaning": "L'Expert",
+      "description": "Celui qui possède une connaissance complète et parfaite de toutes les choses, incluant les détails les plus fins."
+    },
+    {
+      "name": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "meaning": "Le Clément",
+      "description": "Celui qui est extrêmement patient et compréhensif, même envers les créatures qui agissent mal à Son égard."
+    },
+    {
+      "name": "الْعَظِيمُ",
+      "transliteration": "Al-‘Aẓīm",
+      "meaning": "Le Magnifique",
+      "description": "Celui dont la grandeur et la majesté sont infinies, surpassant tout ce que les êtres humains peuvent imaginer."
+    },
+    {
+      "name": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "meaning": "Le Pardonneur",
+      "description": "Celui qui pardonne les péchés de Ses serviteurs avec une grande générosité et sans limite."
+    },
+    {
+      "name": "الْقَابِضُ",
+      "transliteration": "Al-Qābid",
+      "meaning": "Le Retenteur",
+      "description": "Celui qui retient et limite certaines choses, régulant ainsi les bénédictions et les provisions selon Sa sagesse."
+    },
+    {
+      "name": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "meaning": "L'Étendeur",
+      "description": "Celui qui étend et répand Ses bénédictions et provisions, apportant abondance et prospérité."
+    },
+    {
+      "name": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et diminue, régulant les positions et les statuts selon Sa volonté."
+    },
+    {
+      "name": "الْرَّافِعُ",
+      "transliteration": "Ar-Rāfi’",
+      "meaning": "L'Éleveur",
+      "description": "Celui qui élève et honore, changeant les positions et les statuts selon Sa sagesse infinie."
+    },
+    {
+      "name": "الْمُعِزُّ",
+      "transliteration": "Al-Mu’izz",
+      "meaning": "Le Donneur de Pouvoir",
+      "description": "Celui qui accorde l'honneur et le pouvoir à ceux qu’Il choisit, leur donnant dignité et respect."
+    },
+    {
+      "name": "الْمُذِلُّ",
+      "transliteration": "Al-Muzil",
+      "meaning": "L'Abaisseur",
+      "description": "Celui qui abaisse et humilie selon Sa volonté, retirant l'honneur et la dignité de certains lorsqu’Il le décide."
+    },
+    {
+      "name": "الْسَمِيعُ",
+      "transliteration": "As-Samī‘",
+      "meaning": "L'Audient",
+      "description": "Celui qui entend tout, même les murmures les plus faibles et les secrets les plus cachés."
+    },
+    {
+      "name": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "meaning": "Le Voyant",
+      "description": "Celui qui voit tout, sans exception, ayant une vue claire et complète sur toutes les choses."
+    },
+    {
+      "name": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "meaning": "Le Juge",
+      "description": "Celui qui juge avec justice, en utilisant Sa connaissance parfaite et Sa sagesse infinie."
+    },
+    {
+      "name": "الْعَدْلُ",
+      "transliteration": "Al-‘Adl",
+      "meaning": "Le Juste",
+      "description": "Celui qui est parfaitement juste, ne commettant aucune injustice et traitant tout le monde avec équité."
+    }
+  ]
+  

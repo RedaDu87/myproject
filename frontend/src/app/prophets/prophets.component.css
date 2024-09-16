@@ -1,0 +1,60 @@
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .prophets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .prophet-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .prophet-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .prophet-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .prophet-name-arabe {
+    font-size: 20px;
+    color: #007bff; /* Adjust color as needed */
+    margin-top: 10px;
+  }
+  
+  .prophet-role {
+    font-size: 18px;
+    color: #444444;
+    margin-top: 10px;
+  }
+  
+  .prophet-history {
+    font-size: 16px;
+    color: #555555;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .prophet-card {
+      width: calc(100% - 20px);
+    }
+  }
+  

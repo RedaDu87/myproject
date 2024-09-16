@@ -1,0 +1,153 @@
+[
+    {
+      "nom": "Adam",
+      "nom_arabe": "آدَم",
+      "role": "Le premier homme et prophète",
+      "histoire": "Adam a été créé à partir de l'argile, et Allah lui a insufflé la vie. Lui et sa femme, Hawwa (Ève), vivaient dans le paradis, mais ils ont mangé du fruit défendu et ont été expulsés. Après leur repentir, Allah leur a pardonné."
+    },
+    {
+      "nom": "Idris",
+      "nom_arabe": "إِدْرِيس",
+      "role": "Un prophète vertueux",
+      "histoire": "Idris est décrit comme un homme pieux et juste, qui aurait introduit l'écriture et les sciences. Il a été élevé à un rang élevé par Allah."
+    },
+    {
+      "nom": "Nuh",
+      "nom_arabe": "نُوح",
+      "role": "Le prophète de l’arche",
+      "histoire": "Nuh a prêché l'unicité d'Allah pendant 950 ans. Son peuple a rejeté son message. Allah lui a ordonné de construire une arche, et un déluge a détruit les incroyants."
+    },
+    {
+      "nom": "Hud",
+      "nom_arabe": "هُود",
+      "role": "Prophète envoyé au peuple de 'Ad",
+      "histoire": "Hud a prêché au peuple de 'Ad de cesser leur idolâtrie. Ils ont rejeté son message, et Allah a envoyé une tempête pour les détruire."
+    },
+    {
+      "nom": "Saleh",
+      "nom_arabe": "صَالِح",
+      "role": "Prophète envoyé au peuple de Thamud",
+      "histoire": "Saleh a été envoyé au peuple de Thamud. Comme signe, Allah a fait sortir une chamelle d'un rocher, mais le peuple a tué la chamelle. Allah les a punis par un tremblement de terre."
+    },
+    {
+      "nom": "Ibrahim",
+      "nom_arabe": "إِبْرَاهِيم",
+      "role": "Père des prophètes",
+      "histoire": "Ibrahim a prêché l'unicité d'Allah et a détruit les idoles de son peuple. Il a failli sacrifier son fils Ismaël avant qu'un bélier ne soit sacrifié à sa place. Il a construit la Kaaba avec Ismaël."
+    },
+    {
+      "nom": "Lut",
+      "nom_arabe": "لُوط",
+      "role": "Prophète envoyé au peuple de Sodome et Gomorrhe",
+      "histoire": "Lut a prêché contre l'immoralité de son peuple. Ils ont été détruits par Allah avec une pluie de pierres, tandis que Lut et sa famille ont été sauvés."
+    },
+    {
+      "nom": "Ismaël",
+      "nom_arabe": "إِسْمَاعِيل",
+      "role": "Fils d'Ibrahim, ancêtre des Arabes",
+      "histoire": "Ismaël et sa mère Hajar ont été laissés dans le désert par Ibrahim. Il est l'ancêtre des Arabes et a aidé à construire la Kaaba avec son père."
+    },
+    {
+      "nom": "Ishaq",
+      "nom_arabe": "إِسْحَاق",
+      "role": "Fils d'Ibrahim, père de Jacob",
+      "histoire": "Ishaq est le deuxième fils d'Ibrahim. Il a prêché l'unicité d'Allah et est le père de Yaqub, un autre prophète."
+    },
+    {
+      "nom": "Yaqub",
+      "nom_arabe": "يَعْقُوب",
+      "role": "Fils d'Ishaq, père de Yusuf",
+      "histoire": "Yaqub, aussi connu sous le nom d'Israël, est le père des douze tribus d'Israël et a fait face à de nombreuses épreuves, dont la perte de son fils Yusuf."
+    },
+    {
+      "nom": "Yusuf",
+      "nom_arabe": "يُوسُف",
+      "role": "Fils de Yaqub, célèbre pour sa beauté et sa sagesse",
+      "histoire": "Yusuf a été vendu comme esclave par ses frères. Grâce à son interprétation des rêves, il est devenu un haut fonctionnaire en Égypte et a sauvé son peuple de la famine."
+    },
+    {
+      "nom": "Shuayb",
+      "nom_arabe": "شُعَيْب",
+      "role": "Prophète envoyé au peuple de Madyan",
+      "histoire": "Shuayb a prêché contre la fraude et la corruption. Son peuple a refusé de l'écouter et a été détruit par un tremblement de terre."
+    },
+    {
+      "nom": "Ayyub",
+      "nom_arabe": "أَيُّوب",
+      "role": "Symbole de la patience",
+      "histoire": "Ayyub a été éprouvé par la perte de ses biens, de sa santé et de sa famille, mais il est resté patient. Allah l'a récompensé en lui rendant tout ce qu'il avait perdu."
+    },
+    {
+      "nom": "Dhul-Kifl",
+      "nom_arabe": "ذُو ٱلْكِفْل",
+      "role": "Prophète ou homme pieux",
+      "histoire": "Dhul-Kifl est peu mentionné dans le Coran, mais il est considéré comme un homme vertueux qui a respecté ses engagements envers Allah."
+    },
+    {
+      "nom": "Musa",
+      "nom_arabe": "مُوسَى",
+      "role": "Prophète majeur qui a délivré les Israélites",
+      "histoire": "Musa a été choisi pour délivrer les Israélites de l'esclavage en Égypte. Il a reçu la Torah d'Allah et a accompli de nombreux miracles, dont la séparation de la mer Rouge."
+    },
+    {
+      "nom": "Harun",
+      "nom_arabe": "هَارُون",
+      "role": "Frère de Musa et prophète",
+      "histoire": "Harun a assisté Musa dans sa mission auprès du Pharaon et des Israélites. Il avait un don pour la parole et a aidé à maintenir l'ordre parmi les Israélites."
+    },
+    {
+      "nom": "Dawud",
+      "nom_arabe": "دَاوُود",
+      "role": "Roi et prophète, célèbre pour avoir vaincu Goliath",
+      "histoire": "Dawud a tué Goliath avec une fronde. Il est devenu roi et a reçu le Zabur (Psaumes) d'Allah. Il est connu pour sa justice et son éloquence."
+    },
+    {
+      "nom": "Sulayman",
+      "nom_arabe": "سُلَيْمَان",
+      "role": "Fils de Dawud, roi et prophète",
+      "histoire": "Sulayman a régné sur un vaste royaume et a été doté du pouvoir de parler aux animaux et de contrôler les djinns. Il est connu pour son règne juste et sage."
+    },
+    {
+      "nom": "Ilyas",
+      "nom_arabe": "إِلْيَاس",
+      "role": "Prophète envoyé au peuple d'Israël",
+      "histoire": "Ilyas a prêché contre l'idolâtrie dans le royaume d'Israël. Allah l'a élevé aux cieux sans qu'il ne goûte à la mort après que son peuple a rejeté son message."
+    },
+    {
+      "nom": "Alyasa",
+      "nom_arabe": "ٱلْيَسَع",
+      "role": "Prophète et successeur d'Ilyas",
+      "histoire": "Alyasa a poursuivi la mission d'Ilyas et a guidé son peuple sur la voie d'Allah après la montée aux cieux de celui-ci."
+    },
+    {
+      "nom": "Yunus",
+      "nom_arabe": "يُونُس",
+      "role": "Prophète envoyé à Ninive",
+      "histoire": "Yunus a quitté son peuple après qu'ils aient rejeté son message. Il a été avalé par un poisson, mais après s'être repenti, Allah l'a sauvé. Il est revenu à son peuple qui a accepté son message."
+    },
+    {
+      "nom": "Zakariya",
+      "nom_arabe": "زَكَرِيَّا",
+      "role": "Prophète et père de Yahya",
+      "histoire": "Zakariya a prié Allah pour avoir un enfant. Allah lui a accordé Yahya malgré son âge avancé. Il a également pris soin de Maryam, la mère de Jésus."
+    },
+    {
+      "nom": "Yahya",
+      "nom_arabe": "يَحْيَى",
+      "role": "Prophète juste et pieux",
+      "histoire": "Yahya a prêché la droiture et l'obéissance à Allah. Il a été martyrisé pour sa foi."
+    },
+    {
+      "nom": "Isa",
+      "nom_arabe": "عِيسَى",
+      "role": "Prophète majeur, né miraculeusement",
+      "histoire": "Isa est né de la vierge Maryam. Il a accompli de nombreux miracles par la permission d'Allah. Il n'a pas été crucifié selon l'Islam, mais a été élevé aux cieux par Allah."
+    },
+    {
+      "nom": "Muhammad",
+      "nom_arabe": "مُحَمَّد",
+      "role": "Le dernier prophète et sceau de la prophétie",
+      "histoire": "Muhammad (pbsl) a prêché l'unicité d'Allah et a fondé une communauté basée sur la foi et la justice. Il est l'exemple parfait de comportement moral."
+    }
+  ]
+  

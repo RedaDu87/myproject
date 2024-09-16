@@ -1,0 +1,97 @@
+[
+  {
+    "title" : "invocations_du_quotidien",
+    "invocations": [
+      {
+        "invocation_arabe": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+        "invocation_transliteration": "Bismillahi ar-Rahmani ar-Rahim",
+        "invocation_francais": "Au nom d’Allah, le Tout Miséricordieux, le Très Miséricordieux",
+        "raison": "Récitée avant de commencer une action pour obtenir la bénédiction et la protection d'Allah."
+      },
+      {
+        "invocation_arabe": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+        "invocation_transliteration": "Alhamdu lillahi Rabbi al-'Alamin",
+        "invocation_francais": "Louange à Allah, Seigneur de l’univers",
+        "raison": "Exprimée pour remercier Allah, souvent utilisée après avoir mangé ou accompli une bonne action."
+      },
+      {
+        "invocation_arabe": "اللّهُ أَكْبَرُ",
+        "invocation_transliteration": "Allahu Akbar",
+        "invocation_francais": "Allah est le plus Grand",
+        "raison": "Récitée pour rappeler la grandeur d'Allah, souvent dans les prières ou en face de moments de difficulté ou d'émerveillement."
+      }
+    ]
+
+  },
+  {
+   "title" : "invocations_de_demande_de_pardon",
+   "invocations" : [
+      {
+        "invocation_arabe": "أَسْتَغْفِرُ اللَّهَ",
+        "invocation_transliteration": "Astaghfirullah",
+        "invocation_francais": "Je demande pardon à Allah",
+        "raison": "Récitée pour demander pardon pour les péchés commis, elle est très recommandée après une prière ou lorsqu'on est conscient d'une faute."
+      },
+      {
+        "invocation_arabe": "اللّهُمَّ اغْفِرْ لِي وَلِوَالِدَيَّ",
+        "invocation_transliteration": "Allahumma ighfir li wa li-walidayya",
+        "invocation_francais": "Ô Allah, pardonne-moi et à mes parents",
+        "raison": "Invocation faite pour demander le pardon pour soi-même et pour les parents, souvent après la prière."
+      },
+      {
+        "invocation_arabe": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ",
+        "invocation_transliteration": "Rabbi ighfir li wa li-walidayya wa lil-mu'minin",
+        "invocation_francais": "Seigneur, pardonne-moi, pardonne à mes parents et aux croyants",
+        "raison": "Récitée pour demander pardon à Allah pour soi, ses parents et tous les croyants."
+      }
+    ]
+  },
+  {
+   "title" : "invocations_de_glorification_et_de_reconnaissance",
+   "invocations": [
+      {
+        "invocation_arabe": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+        "invocation_transliteration": "SubhanAllahi wa bihamdihi",
+        "invocation_francais": "Gloire et louange à Allah",
+        "raison": "Récitée pour glorifier Allah et exprimer la gratitude. Elle peut être récitée après la prière ou à tout moment pour obtenir des bénédictions."
+      },
+      {
+        "invocation_arabe": "اللّهُمَّ أَنتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ",
+        "invocation_transliteration": "Allahumma anta as-salamu wa minka as-salam",
+        "invocation_francais": "Ô Allah, Tu es la paix et de Toi vient la paix",
+        "raison": "Récitée après la prière pour chercher la paix intérieure et la miséricorde d'Allah."
+      },
+      {
+        "invocation_arabe": "اللّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً",
+        "invocation_transliteration": "Allahumma rabbana atina fi-d-dunya hasanatan wa fi-l-akhirati hasanatan",
+        "invocation_francais": "Ô Allah, accorde-nous le bien ici-bas et le bien dans l’au-delà",
+        "raison": "Récitée pour demander à Allah de nous accorder les bénédictions dans cette vie et dans l'au-delà."
+      }
+    ]
+  },
+  {
+
+    "title" : "invocations_de_protection",
+    "invocations" : [
+      {
+        "invocation_arabe": "اللّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ",
+        "invocation_transliteration": "Allahumma inni a'udhu bika min 'adhabi jahannam",
+        "invocation_francais": "Ô Allah, je cherche refuge auprès de Toi contre le châtiment de l'Enfer",
+        "raison": "Récitée pour demander à Allah de nous protéger contre les tourments de l'Enfer."
+      },
+      {
+        "invocation_arabe": "اللّهُمَّ اشْفِ كُلَّ مَرِيضٍ",
+        "invocation_transliteration": "Allahumma ishfi kulla maridh",
+        "invocation_francais": "Ô Allah, guéris chaque malade",
+        "raison": "Invocation faite pour demander la guérison des malades."
+      },
+      {
+        "invocation_arabe": "اللّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ",
+        "invocation_transliteration": "Allahumma inni a'udhu bika min zawali ni'matika",
+        "invocation_francais": "Ô Allah, je cherche refuge auprès de Toi contre la disparition de Tes bénédictions",
+        "raison": "Récitée pour demander à Allah de protéger les bienfaits qu'Il nous accorde."
+      }
+    ]
+  }
+  
+  ]

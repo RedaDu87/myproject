@@ -1,27 +1,157 @@
-header {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-nav .menu {
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+/* Mega Menu styles */
+/* Mega Menu styles */
+.mega-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative; /* Ensure it has a stacking context */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item > a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav .menu li {
-  display: inline;
-  margin: 0 15px;
+.submenu li {
+  padding: 0.5rem;
 }
 
-nav .menu li a {
-  color: #fff;
+.submenu li a {
   text-decoration: none;
-  font-size: 18px;
+  color: #333;
+  display: block;
 }
 
-nav .menu li a:hover {
-  text-decoration: underline;
+.submenu li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .mega-menu {
+    flex-direction: column;
+    display: none; /* Hide menu by default on small screens */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mega-menu.active {
+    display: flex; /* Show menu when active class is added */
+  }
+
+  .menu-item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .submenu ul {
+    padding: 0;
+  }
+
+  .submenu li {
+    padding: 1rem;
+  }
 }

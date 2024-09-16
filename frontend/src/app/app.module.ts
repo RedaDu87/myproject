@@ -10,6 +10,10 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CoursArabeComponent } from './cours-arabe/cours-arabe.component';
 import { NavComponent } from './nav/nav.component';
+import { InvocationsComponent } from './invocations/invocations.component';
+import { AttributesComponent } from './attributes/attributes.component';
+import { ProphetsComponent } from './prophets/prophets.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { NavComponent } from './nav/nav.component';
     HadithComponent,
     HomeComponent,
     CoursArabeComponent,
-    NavComponent
+    NavComponent,
+    InvocationsComponent,
+    AttributesComponent,
+    ProphetsComponent,
+    TimelineComponent
     
   ],
   imports: [

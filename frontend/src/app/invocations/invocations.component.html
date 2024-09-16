@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="dropdown">
+    <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+      <option *ngFor="let category of categories" [value]="category.title">{{ category.title }}</option>
+    </select>
+  </div>
+  
+  <div *ngIf="selectedCategory" class="invocations-container">
+    <div *ngFor="let invocation of getInvocations(selectedCategory)" class="invocation">
+      <div class="invocation-arabe">{{ invocation.invocation_arabe }}</div>
+      <div class="invocation-transliteration">{{ invocation.invocation_transliteration }}</div>
+      <div class="invocation-francais">{{ invocation.invocation_francais }}</div>
+      <div class="invocation-raison">{{ invocation.raison }}</div>
+    </div>
+  </div>
+</div>

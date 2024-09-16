@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="attributes-container">
+      <div *ngFor="let attribute of attributes; let i = index" class="attribute-card">
+        <div class="attribute-number">{{ i + 1 }}</div>
+        <div class="attribute-name">{{ attribute.name }}</div>
+        <div class="attribute-transliteration">{{ attribute.transliteration }}</div>
+        <div class="attribute-meaning">{{ attribute.meaning }}</div>
+        <div class="attribute-description">{{ attribute.description }}</div>
+      </div>
+    </div>
+  </div>
+  

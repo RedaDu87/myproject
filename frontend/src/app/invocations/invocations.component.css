@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.invocations-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.invocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.invocation-arabe {
+  font-size: 32px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+.invocation-transliteration {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.invocation-francais {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.invocation-raison {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .invocation-arabe {
+    font-size: 24px;
+  }
+
+  .invocation-transliteration, .invocation-francais, .invocation-raison {
+    font-size: 16px;
+  }
+}

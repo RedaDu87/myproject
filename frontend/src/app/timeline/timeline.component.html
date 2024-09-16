@@ -1,0 +1,16 @@
+<div class="timeline-container">
+    <div class="timeline">
+      <ng-container *ngFor="let period of periods">
+        <h2>{{ period.titre_periode }}</h2>
+        <div *ngFor="let event of period.evenements" class="timeline-item">
+          <div class="timeline-content">
+            <h3>{{ event.titre }}</h3>
+            <p>{{ event.description }}</p>
+            <span class="timeline-date">{{ event.date }}</span>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  

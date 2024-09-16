@@ -1,9 +1,167 @@
 <header>
-  <nav>
-    <ul class="menu">
-      <li><a href="coran">Coran</a></li>
-      <li><a href="hadith">Hadith</a></li>
-      <li><a href="coursarabe">Cours d'Arabe</a></li>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="">Monothéisme primordial</a>
+    </div>
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <ul class="mega-menu" [class.active]="isMenuOpen">
+      <li class="menu-item">
+        <a href="/coran">Coran</a>
+      </li>
+      <li class="menu-item">
+        <a href="/hadith">Hadith</a>
+      </li>
+      <li class="menu-item">
+        <a href="/invocations">Invocations</a>
+      </li>
+      <!-- <li class="menu-item">
+        <a href="#">Exégèse</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <li class="menu-item">
+        <a href="/attributes">Noms d'Allah</a>
+       </li>
+      <li class="menu-item">
+        <a href="/histoire">Histoire du monde musulman</a>
+      </li>
+      <li class="menu-item">
+        <a href="/prophets">Histoire des prophètes</a>
+      </li>
+      <!-- <li class="menu-item">
+        <a href="#">Les 5 piliers de l'islam</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Pilier de la foi</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">La vie du prophète Mohamed (pbsl)</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Les 4 qualifes biens guidés</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Des hommes autour du prophète (pbsl)</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Purification de l'âme</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Méthodes de calcul des horaires de prières</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Les ruses de Sheitan le maudit</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Idées fausses à propos de l'islam</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <!-- <li class="menu-item">
+        <a href="#">Questions fréquentes</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
+      <li class="menu-item">
+        <a href="#">Cours d'Arabe</a>
+      </li>
+      <!-- <li class="menu-item">
+        <a href="#">Annuaire des mosquées</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu-item">
+        <a href="#">Quizz</a>
+        <div class="submenu">
+          <ul>
+            <li><a href="#">Débutant</a></li>
+            <li><a href="#">Intermédiaire</a></li>
+            <li><a href="#">Avancé</a></li>
+          </ul>
+        </div>
+      </li> -->
     </ul>
   </nav>
 </header>
+
+

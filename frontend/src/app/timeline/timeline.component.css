@@ -1,0 +1,106 @@
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding: 10px 0;
+    list-style: none;
+  }
+  
+  /* Timeline Line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border-left: 2px solid #ddd;
+    top: 0;
+    width: 0;
+    z-index: 0; /* Ensure the line is behind the content */
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  /* Positioning for odd and even items */
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    position: relative;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure content is above the line */
+  }
+  
+  /* Timeline Date */
+  .timeline-date {
+    position: absolute;
+    top: 50%;
+    right: -80px;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    z-index: 2; /* Ensure date is above the line */
+  }
+  
+  /* Timeline Dot */
+  .timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    z-index: 2; /* Ensure dot is above the line */
+  }
+  
+  /* H2 Titles */
+/* Styles par défaut pour les titres h2 */
+.timeline-item h2 {
+    position: relative;
+    z-index: 3; /* Assure que les h2 sont au-dessus du trait */
+    font-size: 1.5em; /* Ajustez la taille des titres selon vos besoins */
+  }
+  
+  /* Styles pour les petits écrans */
+  @media (max-width: 768px) {
+     h2 {
+      font-size: 1em; /* Ajustez la taille des titres en mode mobile */
+      /* Ajoutez d'autres styles pour les h4 si nécessaire */
+    }
+  
+    /* Assurez-vous que les titres apparaissent comme h4 */
+    h2::before {
+      content: " "; /* Crée un effet visuel pour imiter un h4 */
+      display: block;
+      font-size: 1em; /* Taille de police pour h4 */
+      font-weight: normal; /* Assure que la graisse de police est normale */
+    }
+  }
+  
+  
